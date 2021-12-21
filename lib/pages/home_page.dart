@@ -12,7 +12,18 @@ class HomePage extends StatelessWidget {
           child: Text("My First Big App"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Container(
+          alignment: Alignment.center,
+          width: 100,
+          height: 10,
+          color: Colors.deepPurple,
+          child: Text(
+            "Nishant Narsale",
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
+        ),
+      ),
     );
   }
 }
